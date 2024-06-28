@@ -6,13 +6,11 @@ namespace HannesKirsman\GoogleSearchConsole;
  * @file
  * SearchConsoleApi class file.
  */
-
 use Google_Service_Webmasters;
 use Google_Client;
 use Google_Service_Webmasters_SearchAnalyticsQueryRequest;
 use Google_Service_Webmasters_ApiDimensionFilter;
 use Google_Service_Webmasters_ApiDimensionFilterGroup;
-
 /**
  * Class SearchConsoleApi.
  */
@@ -41,7 +39,6 @@ class SearchConsoleApi extends Google_Service_Webmasters {
     $this->scopes = ['https://www.googleapis.com/auth/webmasters.readonly'];
     $this->authJson = $auth_json;
   }
-
   /**
    * Get default options for queries.
    *
@@ -53,7 +50,6 @@ class SearchConsoleApi extends Google_Service_Webmasters {
       'dimensions' => ['date', 'device', 'page', 'query', 'country'],
     ];
   }
-
   /**
    * Set up connection to Google.
    */
